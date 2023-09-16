@@ -54,7 +54,7 @@
           </div>
           <div class="post-content" v-html="post.text" />
           <div v-for="item in post.media" :src="item.url" alt="" class="relative">
-            <img :src="item.imageUrl" alt="OnlyNans media item">
+            <img :src="item.imageUrl" class="rounded-lg" alt="OnlyNans media item">
             <a v-if="item.isVideo" href="#" class="absolute top-0 bottom-0 right-0 left-0 m-auto p-2 w-20 h-20 bg-gray-600/80 rounded-full flex flex-col items-center justify-center">
               <i class="material-icons text-white/80 text-5xl">play_arrow</i>
             </a>
@@ -83,7 +83,7 @@
           <a href="#" class="material-icons-outlined">arrow_forward_ios</a>
         </div>
       </div>
-      <img v-for="image in data.asideImages" :src="image" alt="">
+      <img v-for="image in data.asideImages" class="rounded-lg" :src="image" alt="">
       <hr>
       <footer class="flex justify-center gap-2 text-xs">
         <a href="#">Privacy</a>
