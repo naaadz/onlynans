@@ -1,0 +1,67 @@
+{
+    "user": {
+        "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+        "name": "@OnlyNans",
+        "title": "OnlyNans"
+    },
+    "nav": [
+        {
+            "icon": "home",
+            "label": "Home"
+        },
+        {
+            "icon": "notifications",
+            "label": "Notifications"
+        },
+        {
+            "icon": "chat",
+            "label": "Messages"
+        },
+        {
+            "icon": "bookmarks",
+            "label": "Collections"
+        },
+        {
+            "icon": "person_add",
+            "label": "Subscriptions"
+        },
+        {
+            "icon": "credit_card",
+            "label": "Add card"
+        },
+        {
+            "icon": "account_circle",
+            "label": "My profile"
+        },
+        {
+            "icon": "pending",
+            "label": "More"
+        }
+    ],
+    "posts": [
+        {
+            "time": "5 hours ago",
+            "price": "15",
+            "text": "loremp ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href=''>Quisquam</a>, voluptatibus.",
+            "images": [
+                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60"
+            ]
+        },
+        {
+            "time": "10 hours ago",
+            "price": "20",
+            "text": "loremp ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Quisquam</strong>, voluptatibus.",
+            "images": [
+                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60"
+            ]
+        }
+    ],
+    "asideImages": [
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60"
+    ]
+}

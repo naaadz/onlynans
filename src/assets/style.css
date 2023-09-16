@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-gray-700;
+}
+
+.avatar {
+    @apply w-10 h-10 rounded-full;
+}
+
+.disabled {
+    @apply opacity-50 cursor-not-allowed;
+}
+
+.post-content a {
+    @apply text-sky-500 font-medium hover:underline;
+}
+
+footer a {
+    @apply text-sky-500 
+}
