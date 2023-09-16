@@ -43,19 +43,38 @@
             "time": "5 hours ago",
             "price": "15",
             "text": "loremp ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href=''>Quisquam</a>, voluptatibus.",
-            "images": [
-                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
-                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
-                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60"
+            "media": [
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                    "isVideo": true
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                    "isVideo": false
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                    "isVideo": false
+                }
             ]
         },
         {
             "time": "10 hours ago",
             "price": "20",
             "text": "loremp ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Quisquam</strong>, voluptatibus.",
-            "images": [
-                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
-                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60"
+            "media": [
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                    "isVideo": true
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                    "isVideo": true
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3b6b5b0b9b0b0b0b0b0b0b0b0b0b0b0b&auto=format&fit=crop&w=500&q=60",
+                    "isVideo": true
+                }
             ]
         }
     ],

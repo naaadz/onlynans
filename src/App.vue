@@ -1,19 +1,23 @@
 <template>
   <div class="container mx-auto md:flex justify-center md:gap-10">
-    <nav class="flex-col py-6 gap-4 hidden md:flex">
+    <nav class="flex-col py-6 gap-4 hidden md:flex min-w-[200px]">
       <img class="avatar" :src="data.user.image" alt="">
       <a v-for="navItem in data.nav" href="#" class="flex items-center text-gray-400 gap-4">
         <i class="material-icons-outlined text-3xl">{{ navItem.icon }}</i>
         <span class="font-bold text-lg">{{ navItem.label }}</span>
       </a>
+      <a class="flex items-center bg-sky-500 rounded-full py-1 px-4 text-white" href="#">
+        <i class="material-icons-outlined text-3xl">add</i>
+        <span class="flex-1 text-center text-sm font-bold">New Post</span>
+      </a>
     </nav>
     <main class="md:max-w-lg md:border-x md:border-gray-300">
       <div class="p-4 border-b flex justify-between items-center">
         <div class="text-lg font-bold">Home</div>
-        <i class="material-icons-outlined">more_vert</i>
+        <a href="#" class="material-icons-outlined">more_vert</a>
       </div>
       <div class="p-4 send-message border-b">
-        <textarea class="w-full text-gray-400 outline-0 resize-none">Write a new post to Nan...</textarea>
+        <textarea class="w-full outline-0 resize-none" placeholder="Write a new post to Nan..."></textarea>
         <nav class="flex gap-2 text-gray-400">
           <a href="#" class="material-icons-outlined disabled">image</a>
           <a href="#" class="material-icons-outlined">leaderboard</a>
@@ -40,7 +44,7 @@
             <div class="post-stats flex flex-col items-end text-gray-400 text-sm">
               <div class="flex items-center gap-2">
                 <span>{{ post.time }}</span>
-                <i class="material-icons-outlined">more_horiz</i>
+                <a href="#" class="material-icons-outlined">more_horiz</a>
               </div>
               <div class="flex items-center gap-1">
                 <span>${{ post.price }}</span>
@@ -49,7 +53,12 @@
             </div>
           </div>
           <div class="post-content" v-html="post.text" />
-          <img v-for="image in post.images" :src="image" alt="">
+          <div v-for="item in post.media" :src="item.url" alt="" class="relative">
+            <img :src="item.imageUrl" alt="OnlyNans media item">
+            <a v-if="item.isVideo" href="#" class="absolute top-0 bottom-0 right-0 left-0 m-auto p-2 w-20 h-20 bg-gray-600/80 rounded-full flex flex-col items-center justify-center">
+              <i class="material-icons text-white/80 text-5xl">play_arrow</i>
+            </a>
+          </div>
           <div class="meta-footer flex justify-between text-gray-400">
             <div class="flex gap-2">
               <a href="#" class="material-icons-outlined">favorite</a>
@@ -64,7 +73,7 @@
       </div>
     </main>
     <aside class="md:max-w-sm flex flex-col gap-4 py-8">
-      <input class="border border-gray-300 rounded-lg py-2 px-4 w-full" type="text" placeholder="Search posts">
+      <input class="border border-gray-300 rounded-lg py-2 px-4 w-full outline-0" type="text" placeholder="Search posts">
       <div class="flex justify-between text-gray-400">
         <span>Suggestions</span>
         <div class="flex gap-2">
@@ -89,10 +98,5 @@
 
 <script setup>
 import data from '@/data/data.json'
-
-
 </script>
 
-<style scoped>
-
-</style>
