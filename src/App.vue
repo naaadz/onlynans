@@ -97,11 +97,11 @@
         ></span>
       </div>
       <hr>
-      <footer class="flex justify-center gap-2 text-xs">
+      <footer class="flex md:flex-col xl:flex-row justify-center gap-2 text-xs">
         <a href="#">Privacy</a>
-        <span>•</span>
+        <span class="md:hidden xl:block">•</span>
         <a href="#">Cookie Notice</a>
-        <span>•</span>
+        <span class="md:hidden xl:block">•</span>
         <a href="#">Terms of Services</a>
       </footer>
     </aside>
