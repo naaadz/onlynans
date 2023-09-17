@@ -2,7 +2,12 @@
   <div class="container mx-auto md:flex justify-center md:gap-10">
     <nav class="flex-col py-6 gap-4 hidden md:flex min-w-[200px]">
       <img class="avatar" :src="data.user.image" alt="">
-      <a v-for="navItem in data.nav" href="#" class="flex items-center text-gray-400 gap-4">
+      <a 
+        v-for="(navItem, i) in data.nav" 
+        href="#" 
+        class="flex items-center text-gray-400 gap-4"
+        :class="{ 'text-gray-700' : i === 0}"
+      >
         <i class="material-icons-outlined text-3xl">{{ navItem.icon }}</i>
         <span class="font-bold text-lg">{{ navItem.label }}</span>
       </a>
@@ -13,7 +18,7 @@
     </nav>
     <main class="md:max-w-lg md:border-x md:border-gray-300">
       <div class="p-4 border-b flex justify-between items-center">
-        <div class="text-lg font-bold">Home</div>
+        <img class="onlynans-logo" src="/onlynans-logo.svg" alt="OnlyNans Logo">
         <a href="#" class="material-icons-outlined">more_vert</a>
       </div>
       <div class="p-4 send-message border-b">
@@ -61,18 +66,18 @@
           </div>
           <div class="meta-footer flex justify-between text-gray-400">
             <div class="flex gap-2">
-              <a href="#" class="material-icons-outlined">favorite</a>
-              <a href="#" class="material-icons-outlined">help</a>
+              <a href="#" class="material-icons-outlined">favorite_border</a>
+              <a href="#" class="material-icons-outlined">question_mark</a>
               <a href="#" class="material-icons-outlined">monetization_on</a>
             </div>
             <div>
-              <a href="#" class="material-icons-outlined">bookmarks</a>
+              <a href="#" class="material-icons-outlined">bookmark_border</a>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <aside class="md:max-w-sm flex flex-col gap-4 py-8">
+    <aside class="md:max-w-xs flex flex-col gap-4 py-8">
       <input class="border border-gray-300 rounded-lg py-2 px-4 w-full outline-0" type="text" placeholder="Search posts">
       <div class="flex justify-between text-gray-400">
         <span>Suggestions</span>
@@ -84,6 +89,13 @@
         </div>
       </div>
       <img v-for="image in data.asideImages" class="rounded-lg" :src="image" alt="">
+      <div class="nav-dots flex justify-center gap-1.5">
+        <span 
+          v-for="i in 15" 
+          class="inline-block w-2 h-2 rounded-full bg-gray-300" 
+          :class="{ 'bg-gray-400' : i === 1}"
+        ></span>
+      </div>
       <hr>
       <footer class="flex justify-center gap-2 text-xs">
         <a href="#">Privacy</a>
